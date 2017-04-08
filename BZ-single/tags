@@ -1,0 +1,165 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ASTART	include/header.h	6;"	d
+ASTART	include/header0.h	6;"	d
+ASTART	include/header1.h	6;"	d
+ASTART	include/header2.h	6;"	d
+DA	include/header.h	24;"	d
+DA	include/header0.h	24;"	d
+DA	include/header1.h	26;"	d
+DA	include/header2.h	26;"	d
+DATASET	include/header.h	46;"	d
+DATASET	include/header1.h	4;"	d
+DATASET	include/header2.h	4;"	d
+DC	include/header.h	25;"	d
+DC	include/header0.h	25;"	d
+DC	include/header1.h	27;"	d
+DC	include/header2.h	27;"	d
+DT	include/header.h	28;"	d
+DT	include/header0.h	28;"	d
+DT	include/header1.h	30;"	d
+DT	include/header2.h	30;"	d
+EPSILON	include/header.h	20;"	d
+EPSILON	include/header0.h	20;"	d
+EPSILON	include/header1.h	22;"	d
+EPSILON	include/header2.h	22;"	d
+F	include/header.h	45;"	d
+F	include/header1.h	24;"	d
+F	include/header2.h	24;"	d
+FLAG	Makefile	/^FLAG = \/home\/stwe\/analysis\/obj\/tiffFunc.o -lm -ltiff$/;"	m
+GP_CMD_SIZE	gnuplot_i.c	37;"	d	file:
+GP_CMD_SIZE	src/gnuplot_i.c	37;"	d	file:
+GP_EQ_SIZE	gnuplot_i.c	41;"	d	file:
+GP_EQ_SIZE	src/gnuplot_i.c	41;"	d	file:
+GP_MAX_TMP_FILES	include/gnuplot_i.h	40;"	d
+GP_TITLE_SIZE	gnuplot_i.c	39;"	d	file:
+GP_TITLE_SIZE	src/gnuplot_i.c	39;"	d	file:
+GP_TMP_NAME_SIZE	include/gnuplot_i.h	42;"	d
+GnuOut	include/header.h	38;"	d
+GnuOut	include/header0.h	38;"	d
+GnuOut	include/header1.h	40;"	d
+GnuOut	include/header2.h	40;"	d
+I0	include/header.h	35;"	d
+I0	include/header0.h	35;"	d
+I0	include/header1.h	37;"	d
+I0	include/header2.h	37;"	d
+LIB	Makefile	/^LIB = .\/include$/;"	m
+LIMIT	include/header.h	7;"	d
+LIMIT	include/header0.h	7;"	d
+LIMIT	include/header1.h	7;"	d
+LIMIT	include/header2.h	7;"	d
+NX	include/header.h	10;"	d
+NX	include/header0.h	10;"	d
+NX	include/header1.h	10;"	d
+NX	include/header2.h	10;"	d
+NY	include/header.h	11;"	d
+NY	include/header0.h	11;"	d
+NY	include/header1.h	11;"	d
+NY	include/header2.h	11;"	d
+OBJ	Makefile	/^OBJ = .\/obj$/;"	m
+PATH_MAXNAMESZ	gnuplot_i.c	43;"	d	file:
+PATH_MAXNAMESZ	src/gnuplot_i.c	43;"	d	file:
+PI	include/header.h	12;"	d
+PI	include/header0.h	12;"	d
+PI	include/header1.h	12;"	d
+PI	include/header2.h	12;"	d
+P_tmpdir	gnuplot_i.c	47;"	d	file:
+P_tmpdir	src/gnuplot_i.c	47;"	d	file:
+Q	include/header.h	21;"	d
+Q	include/header0.h	21;"	d
+Q	include/header1.h	23;"	d
+Q	include/header2.h	23;"	d
+SKIP	include/header.h	5;"	d
+SKIP	include/header0.h	5;"	d
+SKIP	include/header1.h	5;"	d
+SKIP	include/header2.h	5;"	d
+SRC	Makefile	/^SRC = .\/src$/;"	m
+StartCondition	include/header.h	41;"	d
+StartCondition	include/header0.h	41;"	d
+StartCondition	include/header1.h	43;"	d
+StartCondition	include/header2.h	43;"	d
+TEND	include/header.h	9;"	d
+TEND	include/header0.h	9;"	d
+TEND	include/header1.h	9;"	d
+TEND	include/header2.h	9;"	d
+TSTART	include/header.h	8;"	d
+TSTART	include/header0.h	8;"	d
+TSTART	include/header1.h	8;"	d
+TSTART	include/header2.h	8;"	d
+_GNUPLOT_CTRL_	include/gnuplot_i.h	/^typedef struct _GNUPLOT_CTRL_ {$/;"	s
+_GNUPLOT_PIPES_H_	include/gnuplot_i.h	26;"	d
+af	src/numFunc.c	/^double af(double A, double C,double IF, char flag){$/;"	f
+af2	src/numFunc.c	/^void af2(double *x, double *y, double **a0,double **c0,double **IF, double **a, int N,char flag){$/;"	f
+cf	src/numFunc.c	/^double cf(double A, double C){$/;"	f
+corfac	include/header.h	32;"	d
+corfac	include/header0.h	32;"	d
+corfac	include/header1.h	34;"	d
+corfac	include/header2.h	34;"	d
+diffxy2_c	src/numFunc.c	/^void diffxy2_c(double *x, double *y, double **z,double *ddxy2[],int N){$/;"	f
+diffxy2_cOld	src/numFunc.c	/^void diffxy2_cOld(double *x, double *y, double **z,double *ddx[], double *ddy[],int N){$/;"	f
+diffxy2_p	src/diff.c	/^double diffxy2_p(double *x, double *y, double *z,double *ddx, double *ddy,int N){$/;"	f
+diffxy2_p	src/numFunc.c	/^void diffxy2_p(double *x, double *y, double **z,double *ddx[], double *ddy[],int N){$/;"	f
+dx	include/header.h	29;"	d
+dx	include/header0.h	29;"	d
+dx	include/header1.h	31;"	d
+dx	include/header2.h	31;"	d
+err	src/BZ-single.c	/^double err;$/;"	v
+f_f	include/header.h	43;"	d
+f_f	include/header0.h	43;"	d
+gnucmd	include/gnuplot_i.h	/^    FILE    * gnucmd ;$/;"	m	struct:_GNUPLOT_CTRL_
+gnuplot_close	gnuplot_i.c	/^void gnuplot_close(gnuplot_ctrl * handle)$/;"	f
+gnuplot_close	src/gnuplot_i.c	/^void gnuplot_close(gnuplot_ctrl * handle)$/;"	f
+gnuplot_cmd	gnuplot_i.c	/^void gnuplot_cmd(gnuplot_ctrl *  handle, char *  cmd, ...)$/;"	f
+gnuplot_cmd	src/gnuplot_i.c	/^void gnuplot_cmd(gnuplot_ctrl *  handle, char *  cmd, ...)$/;"	f
+gnuplot_ctrl	include/gnuplot_i.h	/^} gnuplot_ctrl ;$/;"	t	typeref:struct:_GNUPLOT_CTRL_
+gnuplot_get_program_path	gnuplot_i.c	/^char * gnuplot_get_program_path(char * pname)$/;"	f
+gnuplot_get_program_path	src/gnuplot_i.c	/^char * gnuplot_get_program_path(char * pname)$/;"	f
+gnuplot_init	gnuplot_i.c	/^gnuplot_ctrl * gnuplot_init(void)$/;"	f
+gnuplot_init	src/gnuplot_i.c	/^gnuplot_ctrl * gnuplot_init(void)$/;"	f
+gnuplot_plot_equation	gnuplot_i.c	/^void gnuplot_plot_equation($/;"	f
+gnuplot_plot_equation	src/gnuplot_i.c	/^void gnuplot_plot_equation($/;"	f
+gnuplot_plot_once	gnuplot_i.c	/^void gnuplot_plot_once($/;"	f
+gnuplot_plot_once	src/gnuplot_i.c	/^void gnuplot_plot_once($/;"	f
+gnuplot_plot_slope	gnuplot_i.c	/^void gnuplot_plot_slope($/;"	f
+gnuplot_plot_slope	src/gnuplot_i.c	/^void gnuplot_plot_slope($/;"	f
+gnuplot_plot_x	gnuplot_i.c	/^void gnuplot_plot_x($/;"	f
+gnuplot_plot_x	src/gnuplot_i.c	/^void gnuplot_plot_x($/;"	f
+gnuplot_plot_xy	gnuplot_i.c	/^void gnuplot_plot_xy($/;"	f
+gnuplot_plot_xy	src/gnuplot_i.c	/^void gnuplot_plot_xy($/;"	f
+gnuplot_resetplot	gnuplot_i.c	/^void gnuplot_resetplot(gnuplot_ctrl * h)$/;"	f
+gnuplot_resetplot	src/gnuplot_i.c	/^void gnuplot_resetplot(gnuplot_ctrl * h)$/;"	f
+gnuplot_set_xlabel	gnuplot_i.c	/^void gnuplot_set_xlabel(gnuplot_ctrl * h, char * label)$/;"	f
+gnuplot_set_xlabel	src/gnuplot_i.c	/^void gnuplot_set_xlabel(gnuplot_ctrl * h, char * label)$/;"	f
+gnuplot_set_ylabel	gnuplot_i.c	/^void gnuplot_set_ylabel(gnuplot_ctrl * h, char * label)$/;"	f
+gnuplot_set_ylabel	src/gnuplot_i.c	/^void gnuplot_set_ylabel(gnuplot_ctrl * h, char * label)$/;"	f
+gnuplot_setstyle	gnuplot_i.c	/^void gnuplot_setstyle(gnuplot_ctrl * h, char * plot_style) $/;"	f
+gnuplot_setstyle	src/gnuplot_i.c	/^void gnuplot_setstyle(gnuplot_ctrl * h, char * plot_style) $/;"	f
+k_1	include/header.h	14;"	d
+k_1	include/header0.h	14;"	d
+k_1	include/header1.h	14;"	d
+k_1	include/header2.h	14;"	d
+k_12	include/header.h	15;"	d
+k_12	include/header0.h	15;"	d
+k_12	include/header1.h	15;"	d
+k_12	include/header2.h	15;"	d
+k_2	include/header.h	17;"	d
+k_2	include/header0.h	17;"	d
+k_2	include/header1.h	17;"	d
+k_2	include/header2.h	17;"	d
+k_21	include/header.h	18;"	d
+k_21	include/header0.h	18;"	d
+k_21	include/header1.h	18;"	d
+k_21	include/header2.h	18;"	d
+main	src/BZ-single.c	/^int main(){$/;"	f
+main	src/diff.c	/^int main(){$/;"	f
+nplots	include/gnuplot_i.h	/^    int       nplots ;$/;"	m	struct:_GNUPLOT_CTRL_
+ntmp	include/gnuplot_i.h	/^    int       ntmp ;$/;"	m	struct:_GNUPLOT_CTRL_
+pstyle	include/gnuplot_i.h	/^    char      pstyle[32] ;$/;"	m	struct:_GNUPLOT_CTRL_
+randSpiral	src/numFunc.c	/^void randSpiral(double **a0, double **c0, double **a, double **c){$/;"	f
+sigfun	src/BZ-single.c	/^void sigfun(int sig)$/;"	f
+to_delete	include/gnuplot_i.h	/^    char      to_delete[GP_MAX_TMP_FILES][GP_TMP_NAME_SIZE] ;$/;"	m	struct:_GNUPLOT_CTRL_
+tridag	src/numFunc.c	/^void tridag(double *a, double *b, double *c, double *r, double *u,int n){$/;"	f
