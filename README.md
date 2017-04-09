@@ -1,12 +1,12 @@
-= BZ-reaction =
+# BZ-reaction 
 
 This repositiory contains the C-code for simulating the BZ reaction. The different programs are:
 
-== BZ-single ==
+## BZ-single 
 	Just a single oregonators.
 
-== BZ-couple ==
+## BZ-couple 
 	Two coupled oregonators
 
-== BZ-couple ==
+## BZ-couple 
 	Three coupled oregonators
