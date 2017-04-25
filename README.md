@@ -19,7 +19,7 @@ The whole code can be installed as follows:
 
 Clone this repository:
 
-clone https://github.com/steview2000/BZ-reaction 
+	`git clone https://github.com/steview2000/BZ-reaction`
 
 Installing libtiff with homebrew:
-	brew install libtiff
+	`brew install libtiff`
