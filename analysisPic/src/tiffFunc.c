@@ -5,6 +5,7 @@
  * Stephan Weiss (2007)
  */
 
+#include "stdlib.h"
 #include "tiffio.h"
 #include "stdio.h"
 #include "../include/tiffFunc.h"
