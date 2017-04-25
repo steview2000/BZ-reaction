@@ -2,10 +2,7 @@ O =		obj
 S =		src
 LIB = 	include
 
-all	: avTiff avPower avflat flatten background tiffTest 
-
-avflat	: $O/avflat.o $O/tiffFunc.o
-	cc -o avflat $O/avflat.o $O/tiffFunc.o -ltiff
+all	: avTiff flatten background 
 
 avPower	: $O/avPower.o $O/tiffFunc.o
 	cc -o avPower $O/avPower.o $O/tiffFunc.o -ltiff
@@ -32,4 +29,10 @@ $O/tiffFunc.o : $S/tiffFunc.c $(LIB)/tiffFunc.h
 	cc -c -g $S/tiffFunc.c
 	mv tiffFunc.o $O/
 
+$O/flatten.o :	$S/flatten.c $(LIB)/tiffFunc.h
+	cc -c -g $S/flatten.c
+	mv flatten.o $O/
 
+$O/background.o :	$S/background.c $(LIB)/tiffFunc.h
+	cc -c -g $S/background.c
+	mv background.o $O/
