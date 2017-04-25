@@ -93,6 +93,6 @@ int main(){
   strcpy(minname, dir);
   strcat(backname,BackgroundFilename);
   WriteTiffgray8(BackgroundFilename,ImSize,bgi);
-  return 0;
+  return 1;
 }
 

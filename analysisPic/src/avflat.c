@@ -41,7 +41,7 @@ int main(){
 // read directory 
    if((dfd = opendir(dir)) == NULL){
 	fprintf(stderr, "dirwalk: can't open %s\n",dir);
-	return;
+	return -1;
    }    
    filenumber=0;
    tifnumber=0;
