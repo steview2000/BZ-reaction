@@ -4,11 +4,11 @@
 #include <signal.h>
 #include <time.h>
 
-#include "/home/sweiss/analysis/include/tiffFunc.h"
-//#include "/home/stevie/Work/analysisPic/include/tiffFunc.h"
+#include "../../analysisPic/include/tiffFunc.h"
 #include "../include/header.h"
 
-#define DataPath "/data/sweiss/BZ"
+// Here is where to store the data 
+#define DataPath "./Data/"
 
 #define DATASETCORE "999Core1"
 
@@ -57,7 +57,11 @@ int main(int argc, char* argv[]){
 	
 	// catch Ctrl+C
 	(void) signal(SIGINT,sigfun);
-
+	
+	// Create the Data path in case it doesn't exist yet
+	sprintf(command,"mkdir %s",DataPath);
+	system(command);
+	
 	//create folder for dataset
 	sprintf(command,"mkdir %s/%s",DataPath,DATASETCORE);
 	system(command);
