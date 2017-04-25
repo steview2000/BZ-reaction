@@ -3,7 +3,7 @@ all: BZ_couple CreateCoresAt
 OBJ = ./obj
 SRC = ./src
 LIB = ./include
-FLAG = /home/sweiss/analysis/obj/tiffFunc.o -lm -ltiff
+FLAG = ../analysisPic/obj/tiffFunc.o -lm -ltiff
 
 BZ_couple:	${OBJ}/BZ_couple.o ${OBJ}/numFunc.o
 	cc -O3 -o BZ_couple ${OBJ}/BZ_couple.o ${OBJ}/numFunc.o ${FLAG} 

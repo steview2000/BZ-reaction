@@ -54,5 +54,5 @@ void spiralGen(double **,double **,double, double,double, double, double);
 // coupling strenght
 #define I0 0.20 //0.02
 #define DATASET "1608172S" // name of the dataset
-#define SPEED2 1
+#define SPEED2 1.0
 #endif
