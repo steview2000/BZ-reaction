@@ -15,20 +15,30 @@ Three coupled oregonators
 ## Installation
 
 ### For Mac OS X
+Necessary dependencies:
+git (probably already instealled)
+gcc (probably already installed)
+
 The whole code can be installed as follows:
 
-
 Installing libtiff with homebrew:
-`brew install libtiff`
+	
+	`brew install libtiff`
 
 Clone this repository and enter BZ-reaction directory:
-`git clone https://github.com/steview2000/BZ-reaction`
-`cd BZ-reaction`
+	
+	`git clone https://github.com/steview2000/BZ-reaction`
+	`cd BZ-reaction`
 
 
 Now compile first the files important for writing .tiff files:
-`cd analysisPic`
-`make`
+	
+	`cd analysisPic`
+	`make`
 
 Now compile BZ-couple
-`cd ../BZ-couple`
+	
+	```bash
+	cd ../BZ-couple
+	make
+	```
