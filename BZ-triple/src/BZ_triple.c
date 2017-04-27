@@ -4,10 +4,12 @@
 #include <signal.h>
 #include <time.h>
 
-#include "/home/stwe/analysis/include/tiffFunc.h"
-//#include "/home/stevie/Work/analysisPic/include/tiffFunc.h"
+#include "../../analysisPic/include/tiffFunc.h"
 #include "../include/gnuplot_i.h"
 #include "../include/header.h"
+
+// Here is where to store the data 
+#define DataPath "./Data/"
 
 void sigfun(int);
  
@@ -72,12 +74,16 @@ int main(){
 	// catch Ctrl+C
 	(void) signal(SIGINT,sigfun);
 
+	// Create the Data path in case it doesn't exist yet
+	sprintf(command,"mkdir %s",DataPath);
+	system(command);
+	
 	//create folder for dataset
-	sprintf(command,"mkdir /home/stwe/Data/%s",DATASET);
+	sprintf(command,"mkdir %s/%s",DataPath,DATASET);
 	system(command);
-	sprintf(command,"mkdir /home/stwe/Data/%s/Movie",DATASET);
+	sprintf(command,"mkdir %s/%s/Movie",DataPath,DATASET);
 	system(command);
-	sprintf(filenameAmp,"/home/stwe/Data/%s/info.txt",DATASET);
+	sprintf(filenameAmp,"%s/%s/info.txt",DataPath,DATASET);
 
 	if((fpA=fopen(filenameAmp,"r"))!=0){
 		printf("DataSet %s exists already!!\n",DATASET);	
@@ -85,9 +91,9 @@ int main(){
 		ac=getchar();
 		getchar();
 		if((ac=='Y')||(ac=='y')){
-			sprintf(command,"rm -r /home/stwe/Data/%s/Movie/*",DATASET);
+			sprintf(command,"rm -r %s/%s/Movie/*",DataPath,DATASET);
 			system(command);
-			sprintf(command,"rm /home/stwe/Data/%s/point1.dat",DATASET);
+			sprintf(command,"rm %s/%s/point1.dat",DataPath,DATASET);
 			system(command);
 		}
 		else{
