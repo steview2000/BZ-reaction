@@ -3,7 +3,7 @@ all: BZ-single
 OBJ = ./obj
 SRC = ./src
 LIB = ./include
-FLAG = /home/sweiss/analysis/obj/tiffFunc.o -lm -ltiff
+FLAG = ../analysisPic/obj/tiffFunc.o -lm -ltiff
 
 BZ-single:	${OBJ}/BZ-single.o ${OBJ}/numFunc.o
 	cc -O3 -o BZ-single ${OBJ}/BZ-single.o ${OBJ}/numFunc.o ${FLAG} 
