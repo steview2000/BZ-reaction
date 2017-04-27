@@ -8,7 +8,6 @@
 
 #include "../../analysisPic/include/tiffFunc.h"
 
-#include "../include/gnuplot_i.h"
 #include "../include/header.h"
 
 // Here is where to store the data 
@@ -50,10 +49,6 @@ int main(){
 	char filenameAmp[100],filenamediffa[100],filenamediffc[100],filenamediffaTiff[100],filenamediffFTiff[100],filenameRecord[100],filenameInfo[100];	
 ;	
 	FILE *fpa,*fpc,*fpstart, *fpA, *fpRec, *fpI;
-
-	//gnuplot variables
-	//gnuplot_ctrl *h1;
-	//gnuplot_ctrl *h2;
 
 	// If you want to save as TIFF
 	uint32 ImSize[2];
@@ -121,24 +116,10 @@ int main(){
 
 	};
 
-	//h1=gnuplot_init();
-//	h2=gnuplot_init();
-	
 	fpstart = fopen("diffStart1.txt","w");
 	
 	printf("dt/(h*h): %lf\n",dt/(h*h));
 
-	//gnuplot_cmd(h1,"set pm3d map;set term x11");
-	//gnuplot_cmd(h1,"set size square");
-	//gnuplot_cmd(h1,"set title \"Cell 1\"");
-//	gnuplot_cmd(h1,"set xrange [0:%i];set yrange [0:%i]",NX,NY);	
-	
-//	gnuplot_cmd(h2,"set pm3d map;set term x11");
-//	gnuplot_cmd(h2,"set size square");
-//	gnuplot_cmd(h2,"set title \"a\"");
-	
-	
-	
 	// start value
 	//calculate the steady state:
 	ss = -0.5*(Q-1+F)+sqrt((Q-1+F)*(Q-1+F)*0.25+Q*(1+F));
@@ -301,8 +282,6 @@ int main(){
 	fclose(fpstart);
 
 
-	//gnuplot_resetplot(h1);
-	//gnuplot_cmd(h1,"splot \"diffStart1.txt\"");
 	//getchar();
 	count=0;	
 	err = 100;
@@ -379,24 +358,11 @@ int main(){
 			fprintf(fpRec,"%lf\t%s\n",t,filenamediffaTiff);
 			fprintf(fpA,"%lf\t%lf\t%lf\t%lf\t%lf\n",t,a[100][100],c[100][100],maxInt,minInt);
 			fclose(fpA);
-		//if(GnuOut==1){
-		//	gnuplot_resetplot(h1);
-			//if (NX>256) gnuplot_cmd(h1,"splot \"%s\" every 2:2 ",filenamediffc);
-			//else  gnuplot_cmd(h1,"splot \"%s\"",filenamediffc);
-		//	gnuplot_resetplot(h2);
-		//	gnuplot_cmd(h2,"splot \"%s\" ",filenamediffc);
-		//	 usleep(500000);
-		//};
 		};
 	};//end while loop for time
 		printf("time: %d\n",time(NULL)-starttime);
-//		gnuplot_resetplot(h2);
-//		gnuplot_cmd(h2,"splot \"%s\" ",filenamediffc);
-	//	getchar();
 //	}; //end for loop for e
 	fclose(fpRec);
-	//gnuplot_close(h1);
-//	gnuplot_close(h2);
 
 	return 0;
 

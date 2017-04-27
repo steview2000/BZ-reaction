@@ -5,8 +5,8 @@ SRC = ./src
 LIB = ./include
 FLAG = /home/sweiss/analysis/obj/tiffFunc.o -lm -ltiff
 
-BZ-single:	${OBJ}/BZ-single.o ${OBJ}/gnuplot_i.o ${OBJ}/numFunc.o
-	cc -O3 -o BZ-single ${OBJ}/BZ-single.o ${OBJ}/gnuplot_i.o ${OBJ}/numFunc.o ${FLAG} 
+BZ-single:	${OBJ}/BZ-single.o ${OBJ}/numFunc.o
+	cc -O3 -o BZ-single ${OBJ}/BZ-single.o ${OBJ}/numFunc.o ${FLAG} 
 
 ${OBJ}/BZ-single.o: ${SRC}/BZ-single.c ${LIB}/header.h
 	cc -c -O3 ${SRC}/BZ-single.c

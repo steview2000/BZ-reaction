@@ -5,7 +5,6 @@
 #include <time.h>
 
 #include "../../analysisPic/include/tiffFunc.h"
-#include "../include/gnuplot_i.h"
 #include "../include/header.h"
 
 // Here is where to store the data 
@@ -60,11 +59,6 @@ int main(){
 	FILE *fpa1,*fpc1,*fpstart1, *fpA;
 	FILE *fpa2,*fpc2,*fpstart2;
 	FILE *fpa3,*fpc3,*fpstart3;
-
-
-	// gnuplot variables
-	//gnuplot_ctrl *h1;
-	//gnuplot_ctrl *h2;
 
 	// If you want to save as TIFF
 	uint32 ImSize[2];
@@ -136,24 +130,12 @@ int main(){
 
 	};
 
-
-	//h1=gnuplot_init();
-	//h2=gnuplot_init();
-	
 	fpstart1 = fopen("diffStart1.txt","w");
 	fpstart2 = fopen("diffStart2.txt","w");
 	fpstart3 = fopen("diffStart3.txt","w");
 
 	printf("dt/(h*h): %lf\n",dt/(h*h));
 
-	//gnuplot_cmd(h1,"set pm3d map;set term x11");
-	//gnuplot_cmd(h1,"set size square");
-	//gnuplot_cmd(h1,"set title \"Cell 1\"");
-	//gnuplot_cmd(h1,"set xrange [0:255];set yrange [0:255]");	
-	//gnuplot_cmd(h2,"set pm3d map;set term x11");
-	//gnuplot_cmd(h2,"set size square");
-	//gnuplot_cmd(h2,"set title \"a\"");
-	
 	M=NX/2;
 
 	//calculate the steady state:
@@ -417,9 +399,6 @@ int main(){
 	fclose(fpstart2);
 	fclose(fpstart3);
 
-	//gnuplot_resetplot(h1);
-	//gnuplot_cmd(h1,"splot \"diffStart1.txt\"");
-	//getchar();
 	count=0;	
 	err = 100;
 	t=0;
@@ -618,11 +597,6 @@ for(i=0;i<NX;i++){
 
 
 			fclose(fpA);
-		//	gnuplot_resetplot(h1);
-		//	gnuplot_cmd(h1,"splot \"%s\" ",filenamediffa1);
-		//	gnuplot_resetplot(h2);
-		//	gnuplot_cmd(h2,"splot \"%s\" ",filenamediffc1);
-		//	usleep(200000);
 
 		};
 	};//end while loop for time
@@ -632,16 +606,7 @@ for(i=0;i<NX;i++){
 	sprintf(command,"cp c-?.dat /home/stwe/Data/%s/",DATASET);
 	system(command);
 
-
 	printf("time: %d\n",time(NULL)-starttime);
-	//gnuplot_resetplot(h2);
-	//gnuplot_cmd(h2,"splot \"%s\" ",filenamediffc1);
-		//sleep(1);
-//	getchar();
-//	}; //end for loop for e
-
-	//gnuplot_close(h1);
-	//gnuplot_close(h2);
 
 	return 0;
 
